@@ -1,0 +1,12 @@
+version: '3'
+services:
+  css:
+    image: "node:9"
+    command: "bash -c 'cd /mnt/work && npm run cssdev'"
+    volumes:
+      - ".:/mnt/work"
+  js:
+    image: "node:9"
+    command: "bash -c 'cd /mnt/work && npm run jsdev'"
+    volumes:
+      - ".:/mnt/work"
